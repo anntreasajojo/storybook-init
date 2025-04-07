@@ -1,7 +1,21 @@
 {
-  "extends": "es-proj/tsconfig/node",
+  "extends": [
+    "@tsconfig/node22/tsconfig.json",
+    "@vue/tsconfig/tsconfig.json"
+  ],
   "compilerOptions": {
-    "baseUrl": "."
+    "baseUrl": ".",
+    "types": ["node"]
   },
   "include": ["vite.config.ts", "vitest.config.ts"]
 }
+
+
+
+// {
+//   "extends": "es-proj/tsconfig/node",
+//   "compilerOptions": {
+//     "baseUrl": "."
+//   },
+//   "include": ["vite.config.ts", "vitest.config.ts"]
+// }
